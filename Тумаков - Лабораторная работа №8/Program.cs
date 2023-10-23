@@ -178,7 +178,7 @@ namespace Тумаков___Лабораторная_работа__8
 
                             for (int i = 0; i < fileContents.Length; i++)
                             {
-                                File.AppendAllText(path + "/../newFile.txt", fileContents[i].ToUpper());
+                                File.AppendAllText(path + "/../newFile.txt", fileContents[i].ToUpper() + Environment.NewLine);
                             }
 
                             Console.WriteLine("Обработка прошла успешно. Рядом с исходным файлом добавлен новый!");
